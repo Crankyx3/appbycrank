@@ -20,14 +20,18 @@ Sie haben eine App-Idee und möchten diese zum Leben erwecken? Ich entwickle ma�
 • Wartung & Support nach Veröffentlichung
 
 🚀 **Ihre Vorteile:**
-• Professionelle Umsetzung mit modernsten Technologien
-• Transparente Kommunikation & faire Preise
-• Schnelle Entwicklungszeiten
+• **Sehr günstige Preise** – Als nebenberuflicher Kleinunternehmer kann ich deutlich günstigere Konditionen als große Agenturen anbieten
+• Professionelle Qualität trotz fairer Preise
+• Transparente Kommunikation & keine versteckten Kosten
+• Schnelle & flexible Entwicklungszeiten
 • Native Performance für beste Benutzererfahrung
-• Individuelle Lösungen für Ihre Anforderungen
+• Persönliche Betreuung statt anonymer Agentur
 
 💼 **Aktuelle Projekte:**
 Entwicklung einer innovativen Wellness-App mit KI-gestützter Mood-Tracking-Funktion, personalisierten Empfehlungen und OpenAI-Integration.
+
+💰 **Preise:**
+Als nebenberuflicher Kleinunternehmer biete ich professionelle App-Entwicklung zu sehr fairen Preisen – deutlich günstiger als große Agenturen! Preise auf Anfrage, individuell nach Projektumfang.
 
 📍 **Standort:** Oldenburg & Umgebung
 💻 **Remote-Projekte:** Deutschlandweit möglich

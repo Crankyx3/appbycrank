@@ -22,11 +22,12 @@ Sie benötigen eine professionelle Website, einen Online-Shop oder eine Landing 
 • Wartung & Support
 
 🚀 **Ihre Vorteile:**
+• **Sehr günstige Preise** – Als nebenberuflicher Kleinunternehmer deutlich günstiger als große Webagenturen!
+• Professionelle Qualität zu fairen Konditionen
 • Schnelle Ladezeiten & beste Performance
-• Professionelles Design, das begeistert
-• SEO-optimiert für maximale Sichtbarkeit
-• Faire Preise & transparente Abrechnung
-• Persönliche Beratung & individuelle Lösungen
+• SEO-optimiert für maximale Sichtbarkeit bei Google
+• Transparente Abrechnung & keine versteckten Kosten
+• Persönliche Betreuung statt anonymer Agentur
 • Moderne Technologien (React, HTML5, CSS3, JavaScript)
 
 💡 **Perfekt für:**
@@ -35,6 +36,9 @@ Sie benötigen eine professionelle Website, einen Online-Shop oder eine Landing 
 • Online-Shops & E-Commerce
 • Restaurants, Handwerker, Dienstleister
 • Portfolio-Websites & Blogs
+
+💰 **Preise:**
+Als nebenberuflicher Kleinunternehmer kann ich Ihnen professionelle Websites zu sehr fairen Preisen anbieten – bis zu 50% günstiger als große Agenturen! Individuelle Preisgestaltung je nach Projektumfang. Kostenvoranschlag auf Anfrage.
 
 📍 **Standort:** Oldenburg & Umgebung
 💻 **Remote-Projekte:** Deutschlandweit möglich

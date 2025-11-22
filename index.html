@@ -608,18 +608,10 @@
                 </p>
             </div>
 
-            <form class="contact-form" action="https://formsubmit.co/finn_bauermeister@web.de" method="POST">
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display:none">
-
-                <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha" value="false">
-
-                <!-- Success Page -->
-                <input type="hidden" name="_next" value="https://crankyx3.github.io/appbycrank/?success=true">
-
-                <!-- Subject -->
+            <form class="contact-form" action="https://formspree.io/f/mgvqzkga" method="POST">
+                <!-- Formspree configuration -->
                 <input type="hidden" name="_subject" value="Neue Projektanfrage von AppByCrank Website">
+                <input type="text" name="_gotcha" style="display:none">
 
                 <div class="form-group">
                     <label for="name">Ihr Name *</label>
@@ -707,8 +699,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('success') === 'true') {
             alert('✅ Vielen Dank für Ihre Anfrage!\n\nIch habe Ihre Nachricht erhalten und melde mich innerhalb von 24 Stunden mit einem Kostenvoranschlag und weiteren Informationen bei Ihnen.\n\nBeste Grüße\nFinn Bauermeister');
-            // Remove success parameter from URL
-            window.history.replaceState({}, document.title, window.location.pathname);
+            // Remove success parameter from URL - keep the full path
+            window.history.replaceState({}, document.title, '/appbycrank/');
         }
 
         // Smooth scroll to form

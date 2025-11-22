@@ -707,8 +707,8 @@
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('success') === 'true') {
             alert('✅ Vielen Dank für Ihre Anfrage!\n\nIch habe Ihre Nachricht erhalten und melde mich innerhalb von 24 Stunden mit einem Kostenvoranschlag und weiteren Informationen bei Ihnen.\n\nBeste Grüße\nFinn Bauermeister');
-            // Remove success parameter from URL
-            window.history.replaceState({}, document.title, window.location.pathname);
+            // Remove success parameter from URL - keep the full path
+            window.history.replaceState({}, document.title, '/appbycrank/');
         }
 
         // Smooth scroll to form

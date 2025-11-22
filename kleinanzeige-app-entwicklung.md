@@ -37,9 +37,8 @@ Als nebenberuflicher Kleinunternehmer biete ich professionelle App-Entwicklung z
 💻 **Remote-Projekte:** Deutschlandweit möglich
 
 **Jetzt unverbindlich anfragen!**
-Kontaktieren Sie mich gerne per WhatsApp oder E-Mail für ein kostenloses Beratungsgespräch.
+Kontaktieren Sie mich gerne per E-Mail für ein kostenloses Beratungsgespräch oder nutzen Sie das Kontaktformular auf meiner Website.
 
-📞 WhatsApp: 0176 63283226
 📧 E-Mail: finn_bauermeister@web.de
 🌐 Website: https://crankyx3.github.io/appbycrank/
 

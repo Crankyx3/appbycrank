@@ -44,9 +44,8 @@ Als nebenberuflicher Kleinunternehmer kann ich Ihnen professionelle Websites zu 
 💻 **Remote-Projekte:** Deutschlandweit möglich
 
 **Kostenlose Erstberatung!**
-Lassen Sie uns gemeinsam Ihre Web-Präsenz auf das nächste Level bringen. Kontaktieren Sie mich für ein unverbindliches Beratungsgespräch.
+Lassen Sie uns gemeinsam Ihre Web-Präsenz auf das nächste Level bringen. Kontaktieren Sie mich für ein unverbindliches Beratungsgespräch per E-Mail oder nutzen Sie das Kontaktformular auf meiner Website.
 
-📞 WhatsApp: 0176 63283226
 📧 E-Mail: finn_bauermeister@web.de
 🌐 Website: https://crankyx3.github.io/appbycrank/
 

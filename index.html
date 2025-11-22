@@ -336,6 +336,101 @@
             font-size: 1.05em;
         }
 
+        /* Contact Form */
+        .form-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .pricing-box {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .pricing-box h3 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+
+        .pricing-box .price {
+            font-size: 3em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .pricing-box p {
+            font-size: 1.1em;
+            opacity: 0.95;
+        }
+
+        .contact-form {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        .form-group {
+            margin-bottom: 25px;
+        }
+
+        .form-group label {
+            display: block;
+            color: #2c3e50;
+            font-weight: 600;
+            margin-bottom: 8px;
+            font-size: 1.05em;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 15px;
+            border: 2px solid #e0e0e0;
+            border-radius: 10px;
+            font-size: 1em;
+            font-family: inherit;
+            transition: all 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .form-group textarea {
+            min-height: 150px;
+            resize: vertical;
+        }
+
+        .submit-btn {
+            width: 100%;
+            padding: 18px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            font-weight: 600;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .submit-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
         /* Footer */
         .footer {
             text-align: center;
@@ -361,8 +456,13 @@
             .services-section,
             .about-section,
             .contact-section,
+            .form-section,
             .impressum {
                 padding: 35px 25px;
+            }
+
+            .pricing-box .price {
+                font-size: 2.5em;
             }
 
             .section-title {
@@ -390,7 +490,7 @@
                 Mit modernsten Technologien, KI-Integration und kreativen Lösungen bringen wir Ihre Vision ins Web und auf das Smartphone.
             </p>
             <div class="cta-buttons">
-                <a href="mailto:finn_bauermeister@web.de" class="btn btn-primary">📧 Projekt anfragen</a>
+                <a href="#anfrage-formular" class="btn btn-primary">🚀 Jetzt Anfrage starten</a>
                 <a href="https://wa.me/4917663283226" class="btn btn-secondary">💬 WhatsApp Nachricht</a>
             </div>
         </div>
@@ -496,9 +596,88 @@
             </div>
         </div>
 
+        <!-- Request Form Section -->
+        <div class="form-section" id="anfrage-formular">
+            <h2 class="section-title">Unverbindliche Projektanfrage</h2>
+
+            <div class="pricing-box">
+                <h3>💰 Transparente Preisgestaltung</h3>
+                <div class="price">30€/Stunde</div>
+                <p>
+                    Als nebenberuflicher Kleinunternehmer biete ich professionelle Entwicklung zu fairen Konditionen.<br>
+                    Nach Ihrer Anfrage erhalten Sie einen kostenlosen Kostenvoranschlag, Lieferdatum und ggf. stelle ich Rückfragen zu Ihrem Projekt.
+                </p>
+            </div>
+
+            <form class="contact-form" action="https://formsubmit.co/finn_bauermeister@web.de" method="POST">
+                <!-- Honeypot -->
+                <input type="text" name="_honey" style="display:none">
+
+                <!-- Disable Captcha -->
+                <input type="hidden" name="_captcha" value="false">
+
+                <!-- Success Page -->
+                <input type="hidden" name="_next" value="https://crankyx3.github.io/appbycrank/?success=true">
+
+                <!-- Subject -->
+                <input type="hidden" name="_subject" value="Neue Projektanfrage von AppByCrank Website">
+
+                <div class="form-group">
+                    <label for="name">Ihr Name *</label>
+                    <input type="text" id="name" name="name" required placeholder="Max Mustermann">
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-Mail-Adresse *</label>
+                    <input type="email" id="email" name="email" required placeholder="ihre@email.de">
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Telefon / WhatsApp (optional)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="0176 12345678">
+                </div>
+
+                <div class="form-group">
+                    <label for="project-type">Was möchten Sie entwickeln lassen? *</label>
+                    <select id="project-type" name="project-type" required>
+                        <option value="">Bitte wählen...</option>
+                        <option value="Mobile App (iOS & Android)">Mobile App (iOS & Android)</option>
+                        <option value="Website / Landing Page">Website / Landing Page</option>
+                        <option value="Webshop / E-Commerce">Webshop / E-Commerce</option>
+                        <option value="Website + Mobile App">Website + Mobile App</option>
+                        <option value="Sonstiges">Sonstiges</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="description">Projektbeschreibung *</label>
+                    <textarea id="description" name="description" required placeholder="Beschreiben Sie Ihr Projekt so detailliert wie möglich. Was ist Ihre Idee? Welche Funktionen soll die App/Website haben? Gibt es bereits ein Design oder Konzept?"></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Geschätztes Budget (optional)</label>
+                    <select id="budget" name="budget">
+                        <option value="">Bitte wählen...</option>
+                        <option value="Unter 500€">Unter 500€</option>
+                        <option value="500€ - 1.000€">500€ - 1.000€</option>
+                        <option value="1.000€ - 2.500€">1.000€ - 2.500€</option>
+                        <option value="2.500€ - 5.000€">2.500€ - 5.000€</option>
+                        <option value="Über 5.000€">Über 5.000€</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="timeline">Gewünschter Zeitrahmen (optional)</label>
+                    <input type="text" id="timeline" name="timeline" placeholder="z.B. 2-3 Monate, so schnell wie möglich, flexibel">
+                </div>
+
+                <button type="submit" class="submit-btn">📨 Unverbindliche Anfrage senden</button>
+            </form>
+        </div>
+
         <!-- Contact Section -->
         <div class="contact-section">
-            <h2 class="section-title">Jetzt Kontakt aufnehmen!</h2>
+            <h2 class="section-title">Alternative Kontaktmöglichkeiten</h2>
             <div class="contact-grid">
                 <div class="contact-card">
                     <div class="contact-icon">💬</div>
@@ -540,5 +719,29 @@
             © 2025 AppByCrank. Alle Rechte vorbehalten.
         </div>
     </div>
+
+    <script>
+        // Check if form was successfully submitted
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('success') === 'true') {
+            alert('✅ Vielen Dank für Ihre Anfrage!\n\nIch habe Ihre Nachricht erhalten und melde mich innerhalb von 24 Stunden mit einem Kostenvoranschlag und weiteren Informationen bei Ihnen.\n\nBeste Grüße\nFinn Bauermeister');
+            // Remove success parameter from URL
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
+
+        // Smooth scroll to form
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
 </body>
 </html>

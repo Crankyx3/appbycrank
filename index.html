@@ -608,18 +608,10 @@
                 </p>
             </div>
 
-            <form class="contact-form" action="https://formsubmit.co/finn_bauermeister@web.de" method="POST">
-                <!-- Honeypot -->
-                <input type="text" name="_honey" style="display:none">
-
-                <!-- Disable Captcha -->
-                <input type="hidden" name="_captcha" value="false">
-
-                <!-- Success Page -->
-                <input type="hidden" name="_next" value="https://crankyx3.github.io/appbycrank/?success=true">
-
-                <!-- Subject -->
+            <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <!-- Formspree configuration -->
                 <input type="hidden" name="_subject" value="Neue Projektanfrage von AppByCrank Website">
+                <input type="text" name="_gotcha" style="display:none">
 
                 <div class="form-group">
                     <label for="name">Ihr Name *</label>

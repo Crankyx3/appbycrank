@@ -27,6 +27,58 @@
             margin: 0 auto;
         }
 
+        /* Navigation */
+        .navigation {
+            background: white;
+            border-radius: 20px;
+            padding: 20px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
         /* Hero Section */
         .hero {
             background: white;
@@ -521,6 +573,18 @@
 
         /* Responsive */
         @media (max-width: 768px) {
+            .navigation {
+                padding: 20px;
+                justify-content: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                text-align: center;
+            }
+
             .hero {
                 padding: 40px 25px;
             }
@@ -578,6 +642,17 @@
 </head>
 <body>
     <div class="container">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="logo">AppByCrank</div>
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Startseite</a></li>
+                <li><a href="prozess.html">Ablauf</a></li>
+                <li><a href="it-dienstleistungen.html">IT-Services</a></li>
+                <li><a href="#anfrage-formular" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95em;">Anfrage starten</a></li>
+            </ul>
+        </nav>
+
         <!-- Hero Section -->
         <div class="hero">
             <h1>AppByCrank</h1>
@@ -632,34 +707,6 @@
                     <p>Von der Entwicklung bis zur Veröffentlichung. App Store, Play Store oder Web-Hosting – inkl. Wartung und Updates.</p>
                 </div>
             </div>
-
-            <div class="additional-services">
-                <h3>Aktuelles Projekt: Zwangsgedanken-Helfer</h3>
-                <p style="color: #555; font-size: 1.05em; line-height: 1.8; margin-top: 15px;">
-                    Eine innovative Wellness-App für Mood-Tracking und emotionales Wohlbefinden. Mit KI-gestützter Analyse und personalisierten
-                    Empfehlungen hilft die App Nutzern, ihre Stimmung besser zu verstehen und zu verbessern. Entwickelt mit React Native,
-                    Firebase und OpenAI Integration.
-                </p>
-            </div>
-        </div>
-
-        <!-- IT Services Section (Secondary) -->
-        <div class="about-section">
-            <h2 class="section-title">Weitere IT-Dienstleistungen</h2>
-            <div class="about-content">
-                <p>
-                    Neben App- und Website-Entwicklung bieten wir unter IT-Dienstleistungen Kutschker
-                    professionellen IT-Support und weitere Services für Unternehmen und Privatkunden in Oldenburg & Umgebung.
-                </p>
-                <ul class="service-list" style="margin-top: 25px;">
-                    <li>Professionelle Website-Erstellung & Webshops</li>
-                    <li>IT-Support für Unternehmen & Privatkunden</li>
-                    <li>Netzwerktechnik & IT-Sicherheit</li>
-                    <li>Automatisierung & Effizienzsteigerung</li>
-                    <li>Fernwartung per TeamViewer</li>
-                    <li>Individuelle IT-Beratung & Lösungen</li>
-                </ul>
-            </div>
         </div>
 
         <!-- About Section -->
@@ -692,94 +739,17 @@
             </div>
         </div>
 
-        <!-- Process Section -->
-        <div class="process-section">
-            <h2 class="section-title">Wie funktioniert die Zusammenarbeit?</h2>
-
-            <div class="process-timeline">
-                <div class="process-step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3><span class="step-icon">📞</span>Erstgespräch & Anfrage</h3>
-                        <p>
-                            Sie kontaktieren mich über das Formular, per E-Mail oder Telefon. In einem unverbindlichen
-                            Erstgespräch besprechen wir Ihre Idee, Anforderungen und Ziele für Ihr App- oder Website-Projekt.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3><span class="step-icon">📋</span>Anforderungsanalyse & Kostenvoranschlag</h3>
-                        <p>
-                            Ich analysiere detailliert Ihre Anforderungen und erstelle einen transparenten Kostenvoranschlag
-                            basierend auf dem geschätzten Aufwand (30€/Stunde). Sie erhalten eine klare Übersicht über Funktionen,
-                            Timeline und Gesamtkosten – komplett kostenfrei und unverbindlich.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3><span class="step-icon">⚙️</span>Entwicklung in Sprints</h3>
-                        <p>
-                            Nach Ihrer Freigabe beginne ich mit der Entwicklung. Ich arbeite in agilen Sprints und halte Sie
-                            regelmäßig mit Updates auf dem Laufenden. Sie erhalten in festgelegten Abständen Zwischenstände
-                            zur Ansicht und können Feedback geben – so stellen wir sicher, dass alles nach Ihren Vorstellungen läuft.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3><span class="step-icon">🎯</span>Review & Anpassungen</h3>
-                        <p>
-                            Während der Entwicklung können Sie jederzeit Anpassungswünsche äußern. Nach jedem Sprint-Review
-                            besprechen wir den Fortschritt und nehmen bei Bedarf Optimierungen vor. Ihre Zufriedenheit steht
-                            im Mittelpunkt.
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h3><span class="step-icon">🚀</span>Finale Präsentation & Abnahme</h3>
-                        <p>
-                            Nach Fertigstellung präsentiere ich Ihnen das finale Produkt. Sie testen die App oder Website
-                            ausführlich und können letzte Anpassungen wünschen. Erst wenn Sie zu 100% zufrieden sind,
-                            erfolgt die offizielle Abnahme und ggf. die Veröffentlichung (App Store, Play Store, Web-Hosting).
-                        </p>
-                    </div>
-                </div>
-
-                <div class="process-step">
-                    <div class="step-number">6</div>
-                    <div class="step-content">
-                        <h3><span class="step-icon">💶</span>Abrechnung & Support</h3>
-                        <p>
-                            Nach erfolgreicher Abnahme erhalten Sie eine transparente Rechnung basierend auf den tatsächlich
-                            geleisteten Stunden. Als Kleinunternehmer stelle ich ohne Mehrwertsteuer aus. Zusätzlich biete
-                            ich optional fortlaufenden Support, Wartung und Updates für Ihr Projekt an.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
         <!-- Request Form Section -->
         <div class="form-section" id="anfrage-formular">
             <h2 class="section-title">Unverbindliche Projektanfrage</h2>
 
             <div class="pricing-box">
-                <h3>💰 Transparente Preisgestaltung</h3>
-                <div class="price">30€/Stunde</div>
+                <h3>💰 Transparente Festpreise</h3>
+                <div class="price" style="font-size: 2em;">Nach Modulen</div>
                 <p>
                     Als nebenberuflicher Kleinunternehmer biete ich professionelle Entwicklung zu fairen Konditionen.<br>
-                    Nach Ihrer Anfrage erhalten Sie einen kostenlosen Kostenvoranschlag, Lieferdatum und ggf. stelle ich Rückfragen zu Ihrem Projekt.
+                    Nach der Anforderungsanalyse erhalten Sie einen Festpreis für Ihr Projekt, aufgeteilt in klar definierte Module.
+                    Keine versteckten Kosten – Sie wissen genau, was Sie bezahlen.
                 </p>
             </div>
 

@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ablauf der Zusammenarbeit - AppByCrank</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation - Same as index.html */
+        .navigation {
+            background: white;
+            border-radius: 20px;
+            padding: 20px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+        }
+
+        /* Process Section */
+        .process-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 2px;
+        }
+
+        .process-timeline {
+            max-width: 900px;
+            margin: 40px auto 0;
+            position: relative;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: 35px;
+            top: 70px;
+            width: 2px;
+            height: calc(100% + 40px);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0.3;
+        }
+
+        .process-step:last-child::before {
+            display: none;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            z-index: 1;
+        }
+
+        .step-content {
+            flex: 1;
+            padding-top: 5px;
+        }
+
+        .step-content h3 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .step-content p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .step-icon {
+            font-size: 1.3em;
+            margin-right: 8px;
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 0.95em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navigation {
+                padding: 20px;
+                justify-content: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .process-section {
+                padding: 35px 25px;
+            }
+
+            .process-step {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .process-step::before {
+                left: 35px;
+                top: 70px;
+            }
+
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5em;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="logo">AppByCrank</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="prozess.html" class="active">Ablauf</a></li>
+                <li><a href="it-dienstleistungen.html">IT-Services</a></li>
+                <li><a href="index.html#anfrage-formular" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95em;">Anfrage starten</a></li>
+            </ul>
+        </nav>
+
+        <!-- Process Section -->
+        <div class="process-section">
+            <h2 class="section-title">So läuft die Zusammenarbeit ab</h2>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">📞</span>Erstgespräch & Anfrage</h3>
+                        <p>
+                            Sie kontaktieren mich über das Formular, per E-Mail oder Telefon. In einem unverbindlichen
+                            Erstgespräch besprechen wir Ihre Idee, Anforderungen und Ziele für Ihr App- oder Website-Projekt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">📋</span>Anforderungsanalyse & Festpreis-Angebot</h3>
+                        <p>
+                            Ich analysiere detailliert Ihre Anforderungen und erstelle ein transparentes Festpreis-Angebot
+                            für Ihr Projekt, aufgeteilt in klar definierte Module. Sie erhalten eine klare Übersicht über Funktionen,
+                            Timeline und Gesamtkosten – komplett kostenfrei und unverbindlich. Keine versteckten Kosten.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">⚙️</span>Entwicklung in Sprints</h3>
+                        <p>
+                            Nach Ihrer Freigabe beginne ich mit der Entwicklung. Ich arbeite in agilen Sprints und halte Sie
+                            regelmäßig mit Updates auf dem Laufenden. Sie erhalten in festgelegten Abständen Zwischenstände
+                            zur Ansicht und können Feedback geben – so stellen wir sicher, dass alles nach Ihren Vorstellungen läuft.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">🎯</span>Review & Anpassungen</h3>
+                        <p>
+                            Während der Entwicklung können Sie jederzeit Anpassungswünsche äußern. Nach jedem Sprint-Review
+                            besprechen wir den Fortschritt und nehmen bei Bedarf Optimierungen vor. Ihre Zufriedenheit steht
+                            im Mittelpunkt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">🚀</span>Finale Präsentation & Abnahme</h3>
+                        <p>
+                            Nach Fertigstellung präsentiere ich Ihnen das finale Produkt. Sie testen die App oder Website
+                            ausführlich und können letzte Anpassungen wünschen. Erst wenn Sie zu 100% zufrieden sind,
+                            erfolgt die offizielle Abnahme und ggf. die Veröffentlichung (App Store, Play Store, Web-Hosting).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">💶</span>Abrechnung & Support</h3>
+                        <p>
+                            Nach erfolgreicher Abnahme erhalten Sie die Rechnung gemäß dem vereinbarten Festpreis für die
+                            fertiggestellten Module. Als Kleinunternehmer stelle ich ohne Mehrwertsteuer aus. Zusätzlich biete
+                            ich optional fortlaufenden Support, Wartung und Updates für Ihr Projekt an.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            © 2025 AppByCrank. Alle Rechte vorbehalten.
+        </div>
+    </div>
+</body>
+</html>

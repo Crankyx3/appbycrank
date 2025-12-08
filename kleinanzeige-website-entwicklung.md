@@ -38,7 +38,7 @@ Sie benötigen eine professionelle Website, einen Online-Shop oder eine Landing 
 • Portfolio-Websites & Blogs
 
 💰 **Preise:**
-Als nebenberuflicher Kleinunternehmer kann ich Ihnen professionelle Websites zu sehr fairen Preisen anbieten – bis zu 50% günstiger als große Agenturen! Individuelle Preisgestaltung je nach Projektumfang. Kostenvoranschlag auf Anfrage.
+Transparente Festpreise nach Modulen! Nach einer kostenlosen Anforderungsanalyse erhalten Sie ein klares Festpreis-Angebot für Ihre Website, aufgeteilt in Module. Als nebenberuflicher Kleinunternehmer bis zu 50% günstiger als große Agenturen – keine versteckten Kosten!
 
 📍 **Standort:** Oldenburg & Umgebung
 💻 **Remote-Projekte:** Deutschlandweit möglich

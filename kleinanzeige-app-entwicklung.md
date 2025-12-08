@@ -31,7 +31,7 @@ Sie haben eine App-Idee und möchten diese zum Leben erwecken? Ich entwickle ma�
 Entwicklung einer innovativen Wellness-App mit KI-gestützter Mood-Tracking-Funktion, personalisierten Empfehlungen und OpenAI-Integration.
 
 💰 **Preise:**
-Als nebenberuflicher Kleinunternehmer biete ich professionelle App-Entwicklung zu sehr fairen Preisen – deutlich günstiger als große Agenturen! Preise auf Anfrage, individuell nach Projektumfang.
+Transparente Festpreise nach Modulen! Nach einer kostenlosen Anforderungsanalyse erhalten Sie ein klares Festpreis-Angebot für Ihr Projekt, aufgeteilt in Module. Als nebenberuflicher Kleinunternehmer deutlich günstiger als große Agenturen – keine versteckten Kosten!
 
 📍 **Standort:** Oldenburg & Umgebung
 💻 **Remote-Projekte:** Deutschlandweit möglich

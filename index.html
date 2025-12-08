@@ -345,6 +345,86 @@
             box-shadow: 0 20px 60px rgba(0,0,0,0.3);
         }
 
+        /* Process Section */
+        .process-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .process-timeline {
+            max-width: 900px;
+            margin: 40px auto 0;
+            position: relative;
+        }
+
+        .process-step {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .process-step:last-child {
+            margin-bottom: 0;
+        }
+
+        .process-step::before {
+            content: '';
+            position: absolute;
+            left: 35px;
+            top: 70px;
+            width: 2px;
+            height: calc(100% + 40px);
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            opacity: 0.3;
+        }
+
+        .process-step:last-child::before {
+            display: none;
+        }
+
+        .step-number {
+            flex-shrink: 0;
+            width: 70px;
+            height: 70px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.8em;
+            font-weight: bold;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+            z-index: 1;
+        }
+
+        .step-content {
+            flex: 1;
+            padding-top: 5px;
+        }
+
+        .step-content h3 {
+            color: #2c3e50;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .step-content p {
+            color: #555;
+            line-height: 1.8;
+            font-size: 1.05em;
+        }
+
+        .step-icon {
+            font-size: 1.3em;
+            margin-right: 8px;
+        }
+
+        /* Pricing Box */
         .pricing-box {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             color: white;
@@ -457,12 +537,29 @@
             .about-section,
             .contact-section,
             .form-section,
+            .process-section,
             .impressum {
                 padding: 35px 25px;
             }
 
             .pricing-box .price {
                 font-size: 2.5em;
+            }
+
+            .process-step {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .process-step::before {
+                left: 35px;
+                top: 70px;
+            }
+
+            .step-number {
+                width: 60px;
+                height: 60px;
+                font-size: 1.5em;
             }
 
             .section-title {
@@ -590,6 +687,84 @@
                         <div class="feature-icon">💡</div>
                         <h4>Kreativ</h4>
                         <p>Innovative Lösungen</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Process Section -->
+        <div class="process-section">
+            <h2 class="section-title">Wie funktioniert die Zusammenarbeit?</h2>
+
+            <div class="process-timeline">
+                <div class="process-step">
+                    <div class="step-number">1</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">📞</span>Erstgespräch & Anfrage</h3>
+                        <p>
+                            Sie kontaktieren mich über das Formular, per E-Mail oder Telefon. In einem unverbindlichen
+                            Erstgespräch besprechen wir Ihre Idee, Anforderungen und Ziele für Ihr App- oder Website-Projekt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">2</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">📋</span>Anforderungsanalyse & Kostenvoranschlag</h3>
+                        <p>
+                            Ich analysiere detailliert Ihre Anforderungen und erstelle einen transparenten Kostenvoranschlag
+                            basierend auf dem geschätzten Aufwand (30€/Stunde). Sie erhalten eine klare Übersicht über Funktionen,
+                            Timeline und Gesamtkosten – komplett kostenfrei und unverbindlich.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">3</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">⚙️</span>Entwicklung in Sprints</h3>
+                        <p>
+                            Nach Ihrer Freigabe beginne ich mit der Entwicklung. Ich arbeite in agilen Sprints und halte Sie
+                            regelmäßig mit Updates auf dem Laufenden. Sie erhalten in festgelegten Abständen Zwischenstände
+                            zur Ansicht und können Feedback geben – so stellen wir sicher, dass alles nach Ihren Vorstellungen läuft.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">4</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">🎯</span>Review & Anpassungen</h3>
+                        <p>
+                            Während der Entwicklung können Sie jederzeit Anpassungswünsche äußern. Nach jedem Sprint-Review
+                            besprechen wir den Fortschritt und nehmen bei Bedarf Optimierungen vor. Ihre Zufriedenheit steht
+                            im Mittelpunkt.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">5</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">🚀</span>Finale Präsentation & Abnahme</h3>
+                        <p>
+                            Nach Fertigstellung präsentiere ich Ihnen das finale Produkt. Sie testen die App oder Website
+                            ausführlich und können letzte Anpassungen wünschen. Erst wenn Sie zu 100% zufrieden sind,
+                            erfolgt die offizielle Abnahme und ggf. die Veröffentlichung (App Store, Play Store, Web-Hosting).
+                        </p>
+                    </div>
+                </div>
+
+                <div class="process-step">
+                    <div class="step-number">6</div>
+                    <div class="step-content">
+                        <h3><span class="step-icon">💶</span>Abrechnung & Support</h3>
+                        <p>
+                            Nach erfolgreicher Abnahme erhalten Sie eine transparente Rechnung basierend auf den tatsächlich
+                            geleisteten Stunden. Als Kleinunternehmer stelle ich ohne Mehrwertsteuer aus. Zusätzlich biete
+                            ich optional fortlaufenden Support, Wartung und Updates für Ihr Projekt an.
+                        </p>
                     </div>
                 </div>
             </div>

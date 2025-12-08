@@ -47,7 +47,7 @@ Als nebenberuflicher Kleinunternehmer kann ich Ihnen professionelle Websites zu 
 Lassen Sie uns gemeinsam Ihre Web-Präsenz auf das nächste Level bringen. Kontaktieren Sie mich für ein unverbindliches Beratungsgespräch per E-Mail oder nutzen Sie das Kontaktformular auf meiner Website.
 
 📧 E-Mail: finn_bauermeister@web.de
-🌐 Website: https://crankyx3.github.io/appbycrank/
+🌐 Website: https://www.appbycrank.de/
 
 ---
 

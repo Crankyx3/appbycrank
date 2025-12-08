@@ -40,7 +40,7 @@ Als nebenberuflicher Kleinunternehmer biete ich professionelle App-Entwicklung z
 Kontaktieren Sie mich gerne per E-Mail für ein kostenloses Beratungsgespräch oder nutzen Sie das Kontaktformular auf meiner Website.
 
 📧 E-Mail: finn_bauermeister@web.de
-🌐 Website: https://crankyx3.github.io/appbycrank/
+🌐 Website: https://www.appbycrank.de/
 
 ---
 

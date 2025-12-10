@@ -46,7 +46,7 @@ Transparente Festpreise nach Modulen! Nach einer kostenlosen Anforderungsanalyse
 **Kostenlose Erstberatung!**
 Lassen Sie uns gemeinsam Ihre Web-Präsenz auf das nächste Level bringen. Kontaktieren Sie mich für ein unverbindliches Beratungsgespräch per E-Mail oder nutzen Sie das Kontaktformular auf meiner Website.
 
-📧 E-Mail: finn_bauermeister@web.de
+📧 E-Mail: kontakt@appbycrank.de
 🌐 Website: https://www.appbycrank.de/
 
 ---

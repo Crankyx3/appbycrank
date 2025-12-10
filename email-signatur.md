@@ -11,7 +11,7 @@ Mobile App & Website Entwicklung
 AppByCrank | IT-Dienstleistungen Kutschker
 📱 0176 63283226
 🌐 www.appbycrank.de
-📧 finn_bauermeister@web.de
+📧 kontakt@appbycrank.de
 
 Nadorsterstraße 270, 26125 Oldenburg
 ---
@@ -30,7 +30,7 @@ AppByCrank – Mobile App & Website Entwicklung
 
 📞 Telefon: 0176 63283226
 🌐 Website: www.appbycrank.de
-✉️ E-Mail: finn_bauermeister@web.de
+✉️ E-Mail: kontakt@appbycrank.de
 
 Transparente Festpreise | Kleinunternehmer gem. § 19 UStG
 ---
@@ -79,7 +79,7 @@ Oldenburg & Umgebung
                     </tr>
                     <tr>
                         <td style="padding: 3px 0;">📧</td>
-                        <td style="padding: 3px 0 3px 8px;"><a href="mailto:finn_bauermeister@web.de" style="color: #333; text-decoration: none;">finn_bauermeister@web.de</a></td>
+                        <td style="padding: 3px 0 3px 8px;"><a href="mailto:kontakt@appbycrank.de" style="color: #333; text-decoration: none;">kontakt@appbycrank.de</a></td>
                     </tr>
                     <tr>
                         <td style="padding: 3px 0;">📍</td>

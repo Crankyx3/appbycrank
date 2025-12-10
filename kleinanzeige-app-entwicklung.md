@@ -39,7 +39,7 @@ Transparente Festpreise nach Modulen! Nach einer kostenlosen Anforderungsanalyse
 **Jetzt unverbindlich anfragen!**
 Kontaktieren Sie mich gerne per E-Mail für ein kostenloses Beratungsgespräch oder nutzen Sie das Kontaktformular auf meiner Website.
 
-📧 E-Mail: finn_bauermeister@web.de
+📧 E-Mail: kontakt@appbycrank.de
 🌐 Website: https://www.appbycrank.de/
 
 ---

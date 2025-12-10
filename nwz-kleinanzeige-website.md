@@ -34,7 +34,7 @@ Sie brauchen eine moderne Website oder einen Webshop für Ihr Unternehmen?
 
 🌐 **Mehr Infos:** www.appbycrank.de
 
-📧 **Kontakt:** finn_bauermeister@web.de
+📧 **Kontakt:** kontakt@appbycrank.de
 📱 **Tel:** 0176 63283226
 
 AppByCrank - Ihr Webdesigner in Oldenburg
@@ -51,7 +51,7 @@ Professionelle Websites & Webshops zu Festpreisen! Modernes Webdesign inkl. SEO-
 Kostenloses Erstgespräch, dann Festpreis-Angebot nach Modulen.
 
 AppByCrank | www.appbycrank.de
-Tel: 0176 63283226 | finn_bauermeister@web.de
+Tel: 0176 63283226 | kontakt@appbycrank.de
 Nadorsterstraße 270, 26125 Oldenburg
 
 ---

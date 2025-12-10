@@ -32,7 +32,7 @@ Sie brauchen eine Mobile App für Ihr Geschäft oder Ihre Idee?
 
 🌐 **Mehr Infos:** www.appbycrank.de
 
-📧 **Kontakt:** finn_bauermeister@web.de
+📧 **Kontakt:** kontakt@appbycrank.de
 📱 **Tel:** 0176 63283226
 
 AppByCrank - Ihr App-Entwickler in Oldenburg
@@ -49,7 +49,7 @@ iOS & Android Apps zu Festpreisen! Moderne Mobile Apps für Ihr Geschäft oder I
 Kostenloses Erstgespräch, dann Festpreis-Angebot nach Modulen.
 
 AppByCrank | www.appbycrank.de
-Tel: 0176 63283226 | finn_bauermeister@web.de
+Tel: 0176 63283226 | kontakt@appbycrank.de
 Nadorsterstraße 270, 26125 Oldenburg
 
 ---

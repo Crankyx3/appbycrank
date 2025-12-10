@@ -173,6 +173,24 @@
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
         }
 
+        /* Navigation CTA Button */
+        .nav-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white !important;
+            padding: 12px 24px !important;
+            border-radius: 25px;
+            font-size: 0.95em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+            color: white !important;
+        }
+
         /* Hero Section */
         .hero {
             background: white;
@@ -679,6 +697,12 @@
                 text-align: center;
             }
 
+            .nav-btn {
+                display: block;
+                width: auto;
+                margin: 0 auto;
+            }
+
             .hero {
                 padding: 40px 25px;
             }
@@ -743,7 +767,7 @@
                 <li><a href="index.html" class="active">Startseite</a></li>
                 <li><a href="prozess.html">Ablauf</a></li>
                 <li><a href="it-dienstleistungen.html">IT-Services</a></li>
-                <li><a href="#anfrage-formular" class="btn btn-primary" style="padding: 10px 25px; font-size: 0.95em;">Anfrage starten</a></li>
+                <li><a href="#anfrage-formular" class="nav-btn">Anfrage starten</a></li>
             </ul>
         </nav>
 

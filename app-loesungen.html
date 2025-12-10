@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO Meta Tags -->
+    <title>App-Lösungen für Ihr Unternehmen | AppByCrank Oldenburg</title>
+    <meta name="description" content="Inspirierende App-Beispiele mit KI-Integration für verschiedene Branchen: Bauunternehmen, Restaurants, Fitness, Handel und mehr. Maßgeschneiderte Mobile Apps für Ihr Business.">
+    <meta name="keywords" content="App Beispiele, Branchen Apps, KI App, Business App, Restaurant App, Fitness App, Handwerker App, Oldenburg">
+    <meta name="author" content="Finn Bauermeister, AppByCrank">
+    <meta name="robots" content="index, follow">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Navigation */
+        .navigation {
+            background: white;
+            border-radius: 20px;
+            padding: 20px 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+            align-items: center;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #2c3e50;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            position: relative;
+        }
+
+        .nav-links a:hover {
+            color: #667eea;
+        }
+
+        .nav-links a.active::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        /* Navigation CTA Button */
+        .nav-btn {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white !important;
+            padding: 12px 24px !important;
+            border-radius: 25px;
+            font-size: 0.95em;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.5);
+            color: white !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: white;
+            border-radius: 20px;
+            padding: 60px 40px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .hero p {
+            font-size: 1.2em;
+            color: #555;
+            max-width: 800px;
+            margin: 0 auto;
+            line-height: 1.8;
+        }
+
+        /* Solutions Section */
+        .solutions-section {
+            background: white;
+            border-radius: 20px;
+            padding: 50px 40px;
+            margin-bottom: 40px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.2em;
+            color: #2c3e50;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            text-align: center;
+            font-size: 1.1em;
+            color: #666;
+            margin-bottom: 40px;
+        }
+
+        .solutions-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .solution-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 35px;
+            border-radius: 20px;
+            transition: all 0.3s ease;
+            border: 2px solid transparent;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .solution-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.3);
+            border-color: #667eea;
+        }
+
+        .solution-icon {
+            font-size: 3.5em;
+            margin-bottom: 15px;
+            display: block;
+        }
+
+        .solution-card h3 {
+            color: #2c3e50;
+            font-size: 1.6em;
+            margin-bottom: 12px;
+        }
+
+        .solution-card .subtitle {
+            color: #555;
+            font-size: 1.05em;
+            margin-bottom: 20px;
+            font-style: italic;
+        }
+
+        .features-list {
+            list-style: none;
+            margin-bottom: 20px;
+        }
+
+        .features-list li {
+            padding: 8px 0;
+            color: #555;
+            font-size: 0.95em;
+            position: relative;
+            padding-left: 25px;
+        }
+
+        .features-list li::before {
+            content: "✓";
+            color: #27ae60;
+            font-weight: bold;
+            font-size: 1.2em;
+            position: absolute;
+            left: 0;
+        }
+
+        .ai-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.85em;
+            font-weight: 600;
+            margin-top: 15px;
+            box-shadow: 0 4px 10px rgba(102, 126, 234, 0.3);
+        }
+
+        .ai-features {
+            background: rgba(102, 126, 234, 0.1);
+            padding: 15px;
+            border-radius: 12px;
+            margin-top: 15px;
+            border-left: 4px solid #667eea;
+        }
+
+        .ai-features h4 {
+            color: #667eea;
+            font-size: 0.95em;
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .ai-features ul {
+            list-style: none;
+            margin: 0;
+        }
+
+        .ai-features li {
+            padding: 5px 0;
+            color: #555;
+            font-size: 0.9em;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .ai-features li::before {
+            content: "🤖";
+            position: absolute;
+            left: 0;
+            font-size: 1em;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 20px;
+            padding: 50px 40px;
+            text-align: center;
+            color: white;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            margin-bottom: 40px;
+        }
+
+        .cta-section h2 {
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .cta-section p {
+            font-size: 1.2em;
+            margin-bottom: 30px;
+            opacity: 0.95;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #667eea;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Footer */
+        .footer {
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 0.95em;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .navigation {
+                padding: 20px;
+                justify-content: center;
+            }
+
+            .nav-links {
+                flex-direction: column;
+                gap: 15px;
+                width: 100%;
+                text-align: center;
+            }
+
+            .nav-btn {
+                display: block;
+                width: auto;
+                margin: 0 auto;
+            }
+
+            .hero {
+                padding: 40px 25px;
+            }
+
+            .hero h1 {
+                font-size: 2em;
+            }
+
+            .solutions-section,
+            .cta-section {
+                padding: 35px 25px;
+            }
+
+            .solutions-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .section-title {
+                font-size: 1.8em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Navigation -->
+        <nav class="navigation">
+            <div class="logo">AppByCrank</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Startseite</a></li>
+                <li><a href="app-loesungen.html" class="active">App-Lösungen</a></li>
+                <li><a href="prozess.html">Ablauf</a></li>
+                <li><a href="it-dienstleistungen.html">IT-Services</a></li>
+                <li><a href="index.html#anfrage-formular" class="nav-btn">Anfrage starten</a></li>
+            </ul>
+        </nav>
+
+        <!-- Hero Section -->
+        <div class="hero">
+            <h1>🚀 App-Lösungen für Ihre Branche</h1>
+            <p>
+                Lassen Sie sich inspirieren! Hier finden Sie Beispiele für maßgeschneiderte Mobile Apps mit KI-Integration
+                für verschiedene Branchen. Jede App wird individuell auf Ihre Bedürfnisse zugeschnitten.
+            </p>
+        </div>
+
+        <!-- Solutions Section -->
+        <div class="solutions-section">
+            <h2 class="section-title">Branchen-Beispiele</h2>
+            <p class="section-subtitle">Konzepte zur Inspiration – Ihre App wird individuell entwickelt</p>
+
+            <div class="solutions-grid">
+                <!-- Bauunternehmen App -->
+                <div class="solution-card">
+                    <span class="solution-icon">🏗️</span>
+                    <h3>Bauunternehmen App</h3>
+                    <p class="subtitle">Baustellen-Management mit KI</p>
+                    <ul class="features-list">
+                        <li>Projektfortschritt in Echtzeit tracken</li>
+                        <li>Materialbestellungen & Lieferantenverwaltung</li>
+                        <li>Fotodokumentation mit Zeitstempel</li>
+                        <li>Team-Kommunikation & Aufgabenverteilung</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>Automatische Kostenprognose basierend auf Baufortschritt</li>
+                            <li>Bauplan-Analyse per Foto (Erkennung von Mängeln)</li>
+                            <li>KI-gestützte Zeitplanung & Ressourcen-Optimierung</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Restaurant/Café App -->
+                <div class="solution-card">
+                    <span class="solution-icon">🍽️</span>
+                    <h3>Restaurant & Café App</h3>
+                    <p class="subtitle">Bestell- & Treueprogramm mit KI</p>
+                    <ul class="features-list">
+                        <li>Online-Bestellung & Lieferung</li>
+                        <li>Tischreservierung mit Verfügbarkeitsanzeige</li>
+                        <li>Digitale Speisekarte mit Bildern</li>
+                        <li>Treuepunkte-System & Rabattaktionen</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>Personalisierte Menü-Empfehlungen</li>
+                            <li>KI-Chatbot für Reservierungen & Sonderwünsche</li>
+                            <li>Automatische Ernährungsinformationen & Allergen-Check</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Fitness Studio App -->
+                <div class="solution-card">
+                    <span class="solution-icon">💪</span>
+                    <h3>Fitness Studio App</h3>
+                    <p class="subtitle">Personal Training mit KI-Coach</p>
+                    <ul class="features-list">
+                        <li>Individueller Trainingsplan</li>
+                        <li>Fortschrittstracking (Gewicht, Wiederholungen)</li>
+                        <li>Ernährungstipps & Rezepte</li>
+                        <li>Kursanmeldung & Studio-Check-in</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>KI-generierte personalisierte Trainingspläne</li>
+                            <li>Formcheck per Video-Analyse</li>
+                            <li>Adaptive Trainingsanpassung basierend auf Fortschritt</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Einzelhandel/Shop App -->
+                <div class="solution-card">
+                    <span class="solution-icon">🛍️</span>
+                    <h3>Einzelhandel & Shop App</h3>
+                    <p class="subtitle">Shopping mit KI-Assistent</p>
+                    <ul class="features-list">
+                        <li>Produktkatalog mit Suchfunktion</li>
+                        <li>Warenkorb & sichere Bezahlung</li>
+                        <li>Bestellverfolgung & Lieferstatus</li>
+                        <li>Kundenkonto mit Bestellhistorie</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>Virtueller Shopping-Assistent (ChatGPT)</li>
+                            <li>Produktempfehlungen basierend auf Kaufhistorie</li>
+                            <li>Visuelle Produktsuche per Foto</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Handwerker App -->
+                <div class="solution-card">
+                    <span class="solution-icon">🔧</span>
+                    <h3>Handwerker App</h3>
+                    <p class="subtitle">Auftrags-Management für Handwerker</p>
+                    <ul class="features-list">
+                        <li>Terminplanung & Kalenderintegration</li>
+                        <li>Digitale Angebotserstellung</li>
+                        <li>Kundenverwaltung & Kontaktdaten</li>
+                        <li>Material-Checklisten & Lagerverwaltung</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>Automatische Auftragsschätzung (Zeit & Material)</li>
+                            <li>KI-gestützte Routenoptimierung für Einsätze</li>
+                            <li>Intelligente Priorisierung von Aufträgen</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Immobilien App -->
+                <div class="solution-card">
+                    <span class="solution-icon">🏠</span>
+                    <h3>Immobilien App</h3>
+                    <p class="subtitle">Immobiliensuche mit KI</p>
+                    <ul class="features-list">
+                        <li>Objektsuche mit Filtern (Preis, Größe, Lage)</li>
+                        <li>Favoriten-Liste & Vergleichsfunktion</li>
+                        <li>Besichtigungstermine vereinbaren</li>
+                        <li>Virtuelle Rundgänge & Bildergalerien</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>KI-Empfehlungen basierend auf Suchverhalten</li>
+                            <li>Virtuelle Besichtigungen mit KI-Guide</li>
+                            <li>Automatische Preisschätzung & Marktanalyse</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Arztpraxis App -->
+                <div class="solution-card">
+                    <span class="solution-icon">🏥</span>
+                    <h3>Arztpraxis App</h3>
+                    <p class="subtitle">Patientenverwaltung mit KI</p>
+                    <ul class="features-list">
+                        <li>Online-Terminbuchung mit Verfügbarkeit</li>
+                        <li>Digitale Rezepte & Befunde</li>
+                        <li>Gesundheitsdaten & Impfpass</li>
+                        <li>Videosprechstunde-Integration</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>Symptom-Checker (präventiv, kein Arzt-Ersatz)</li>
+                            <li>Medikamentenerinnerungen mit Wechselwirkungscheck</li>
+                            <li>KI-Chatbot für allgemeine Gesundheitsfragen</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Event App -->
+                <div class="solution-card">
+                    <span class="solution-icon">🎉</span>
+                    <h3>Event & Veranstaltungs App</h3>
+                    <p class="subtitle">Event-Management mit KI</p>
+                    <ul class="features-list">
+                        <li>Ticketverkauf & digitale Tickets (QR-Code)</li>
+                        <li>Event-Programm mit Zeitplan</li>
+                        <li>Networking-Features (Teilnehmer vernetzen)</li>
+                        <li>Push-Benachrichtigungen für Updates</li>
+                    </ul>
+                    <div class="ai-features">
+                        <h4>🤖 KI-Features:</h4>
+                        <ul>
+                            <li>Personalisierte Event-Empfehlungen</li>
+                            <li>KI-Chatbot für Event-Fragen & Support</li>
+                            <li>Smart Networking (Interessenbasierte Kontaktvorschläge)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- CTA Section -->
+        <div class="cta-section">
+            <h2>💡 Ihre Branche nicht dabei?</h2>
+            <p>
+                Kein Problem! Jede App wird individuell entwickelt und perfekt auf Ihre Anforderungen zugeschnitten.
+                Lassen Sie uns gemeinsam Ihre App-Idee zum Leben erwecken.
+            </p>
+            <a href="index.html#anfrage-formular" class="cta-button">🚀 Jetzt kostenlose Beratung anfragen</a>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            © 2025 AppByCrank. Alle Rechte vorbehalten.
+        </div>
+    </div>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
